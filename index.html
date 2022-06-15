@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books Lists</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <style>
+      .highlight{
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- using navigation bar for search & title of page -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">Dev's Favorite Books...!!</a>
+        <form class="d-flex" role="search">
+          <input
+            id="search-input"
+            class="form-control me-2"
+            type="search"
+            placeholder="Your Search Text"
+          />
+          <button class="btn btn-outline-info btn-dark" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- creating table -->
+    <div id="data">
+      <table class="table table-hover table-striped table-bordered">
+        <thead>
+          <tr class="table table-success">
+            <th scope="col">Sr.</th>
+            <th scope="col">Name</th>
+            <th scope="col">ISBN</th>
+            <th scope="col">Pages</th>
+            <th scope="col">Auther</th>
+            <th scope="col">Publisher</th>
+            <th scope="col">Release Date</th>
+          </tr>
+        </thead>
+        <tbody id="list">
+          <tr class="table">
+            <th scope="Col">1</th>
+            <td>Loading...</td>
+            <td>Loading...</td>
+            <td>Loading...</td>
+            <td>Loading...</td>
+            <td>Loading...</td>
+            <td>Loading...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+   
+  </body>
+</html>
